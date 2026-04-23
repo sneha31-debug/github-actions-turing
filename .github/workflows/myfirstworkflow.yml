@@ -8,6 +8,10 @@ jobs:
       - name: Print Hello World
         run: echo "Hello World" 
       - name: Repo Clone 
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4 
+      - name: Setup Node version 
+        uses: actions/setup-node@v4
+        with: 
+          node-version: '18'
       - name: run index.js
-        run: node index.js
+        run: node index.js 
