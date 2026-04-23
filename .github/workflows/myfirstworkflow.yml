@@ -7,3 +7,5 @@ jobs:
     steps:
       - name: Print Hello World
         run: echo "Hello World" 
+      - name: run index.js
+        run: node index.js
